@@ -151,7 +151,7 @@ describe Day_iterator do
     day_counters.each do |kvp|
       max = kvp[1] if kvp[1] > max
     end
-    puts "foo: #{day_counters['Friday']}"
+    puts "Fridays the 13th's counted: #{day_counters['Friday']}"
     expect(day_counters['Friday']).to eql(max), "The most 13's are not Friday."
   end
 
