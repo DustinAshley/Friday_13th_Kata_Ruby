@@ -121,7 +121,7 @@ class Day_iterator
   end
 
   def goto_next_day(day=@day)
-    @day = (@last_day_of_month % 7) + 1
+    @day = (@last_day_of_month + 1 % 7)
   end
 
   def display_counts
