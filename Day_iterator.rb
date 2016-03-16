@@ -126,7 +126,7 @@ class Day_iterator
 
   def display_counts
     (1..7).each do |i|
-      day_string = convert_day_to_string(i)
+      convert_day_to_string(i)
     end
     return @day_counter
   end
